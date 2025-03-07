@@ -33,8 +33,8 @@ function Tracks() {
                 tracks ? (
                     <>
                         <div className="tracks-grid">
-                            {tracks.items.map((track) => (
-                                <Track trackData={track} key={track.id}/>
+                            {tracks.items.map((track, index) => (
+                                <Track index={index} trackData={track} key={track.id}/>
                             ))}
                         </div>
                         <NavigateTopButton />

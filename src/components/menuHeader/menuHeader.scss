@@ -62,14 +62,22 @@
 
         .menu-header-option{
 
-            &:nth-child(1) a{
+            &:nth-child(1){
                 border-top-right-radius: 0px;
                 border-bottom-right-radius: 0px;
+                a{
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                }
             }
 
-            &:nth-child(2) a{
+            &:nth-child(2) {
                 border-top-left-radius: 0px;
                 border-bottom-left-radius: 0px;
+                a{
+                    border-top-left-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                }
             }
 
             &.selected {
@@ -77,6 +85,10 @@
                     color: white;
                     background-color: #1db954; // Color del texto para el botón seleccionado
                 }
+            }
+
+            &:hover {
+                transform: unset; // Efecto de elevación al pasar el ratón
             }
         }        
     }

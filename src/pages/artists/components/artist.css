@@ -91,4 +91,10 @@
     justify-content: center;
     display: flex;
   }
+  .artist .artist-name {
+    font-size: 0.75rem;
+  }
+  .artist .artist-genre {
+    font-size: 0.65rem;
+  }
 }/*# sourceMappingURL=artist.css.map */

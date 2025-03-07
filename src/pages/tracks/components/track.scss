@@ -47,6 +47,19 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+    .index{
+        font-size: 0.75rem;
+        color: white;
+        background-color: purple;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 100%;
+        min-width: 30px;
+        min-height: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -54,9 +67,18 @@
         max-width: 100%;
         display: grid;
         grid-template-columns: 1fr 5fr;
+        position: relative;
         img {
             height: 100px;
             width: 100px;
+        }
+
+        .track-name{
+            font-size: 0.75rem;
+        }
+
+        .track-artist{
+            font-size: 0.65rem;
         }
 
         .index{
@@ -66,14 +88,6 @@
             align-items: center;
             justify-content: center;
             display: flex;
-        }
-
-        .track-name{
-            font-size: 0.75rem;
-        }
-
-        .track-artist{
-            font-size: 0.65rem;
         }
     }
     
