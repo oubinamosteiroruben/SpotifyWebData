@@ -1,0 +1,27 @@
+.selector-time {
+  display: grid;
+  width: 50vw;
+  margin: 10vh auto 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.selector-time button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.selector-time button:hover {
+  background-color: #1aa34a;
+  transform: translateY(-2px);
+  color: white;
+}
+.selector-time button.selected {
+  background-color: #1db954;
+  color: white;
+}/*# sourceMappingURL=selectorTime.css.map */

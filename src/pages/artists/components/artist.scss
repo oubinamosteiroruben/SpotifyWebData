@@ -1,0 +1,78 @@
+.artist {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombreado ligero
+    border-radius: 10px;
+    background-color: #fff; // Fondo blanco para un look más limpio
+    text-decoration: none;
+    overflow: hidden; // Para asegurar que los bordes redondeados se apliquen a la imagen también
+    transition: transform 0.3s, box-shadow 0.3s; // Transiciones suaves
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    max-width: 150px;
+    position: relative;
+
+    &:hover {
+        transform: translateY(-5px); // Efecto de elevación al pasar el ratón
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Sombreado más fuerte al pasar el ratón
+    }
+
+    img {
+        width: 100%; // Asegura que la imagen ocupe todo el ancho del contenedor
+        height: 150px; // Establece una altura fija para las imágenes
+        object-fit: cover; // Asegura que la imagen se recorte para llenar el contenedor sin deformarse
+        border-top-left-radius: 10px; // Bordes redondeados en la parte superior
+        border-top-right-radius: 10px; // Bordes redondeados en la parte superior
+    }
+
+    .artist-info {
+        padding: 1rem; // Espaciado interno
+        text-align: center; // Centrar el texto
+    }
+
+    .artist-name {
+        font-size: 1rem; // Tamaño de fuente más grande
+        font-weight: bold; // Texto en negrita
+        color: #333; // Color del texto
+        margin-bottom: 0.5rem; // Espaciado inferior
+        hyphens: auto; // Dividir las palabras largas en varias líneas
+        word-break: break-word; // Dividir las palabras largas en varias líneas
+    }
+
+    .artist-genre {
+        font-size: 1rem; // Tamaño de fuente
+        color: #666; // Color del texto
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .popularity{
+        font-size: 0.75rem;
+        color: white;
+        background-color: purple;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        padding: 0.5rem;
+        border-radius: 100%;
+    }
+
+    .following-button{
+        background-color: #1db954;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s; // Transiciones suaves
+
+        &:hover {
+            background-color: #1aa34a; // Color de fondo al pasar el ratón
+            transform: translateY(-2px); // Efecto de elevación al pasar el ratón
+        }
+        margin-bottom: 1rem;
+    }
+}

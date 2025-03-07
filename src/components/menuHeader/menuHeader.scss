@@ -1,0 +1,48 @@
+.menu-header{
+    display: grid;
+    width: 300px;
+    margin-left: 1rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; // Añadir espacio entre los botones
+    
+    .menu-header-option {
+
+        height: 30px;
+
+        a{
+            padding: 0.5rem 1rem;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            text-decoration: none;
+            color: #333; // Color del texto
+            transition: color 0.3s; // Transiciones suaves
+        }
+        
+        border: none;
+        background-color: #f0f0f0; // Color de fondo para los botones
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s; // Transiciones suaves
+
+        &.selected {
+            a{
+                color: #1db954; // Color del texto para el botón seleccionado
+            }
+        }
+        
+        &:hover {
+            background-color: #1aa34a; // Color de fondo al pasar el ratón
+            transform: translateY(-2px); // Efecto de elevación al pasar el ratón
+            a{
+                color: white;
+            }
+        }
+
+        
+    }
+}

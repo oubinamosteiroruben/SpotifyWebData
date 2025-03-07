@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1db954;
+  color: white;
+}
+.header .title {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header .back-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white !important;
+}/*# sourceMappingURL=header.css.map */

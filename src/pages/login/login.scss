@@ -1,0 +1,55 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; // Fondo gris claro para toda la página
+
+    .login-card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombreado ligero
+        border-radius: 10px;
+        background-color: #fff; // Fondo blanco para la tarjeta de login
+        padding: 2rem;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s; // Transiciones suaves
+        width: 40vw; // Ajusta el ancho de la tarjeta
+        height: auto; // Ajusta la altura de la tarjeta automáticamente
+        max-width: 400px; // Ancho máximo de la tarjeta
+        min-width: 300px; // Ancho mínimo de la tarjeta
+
+        &:hover {
+            transform: translateY(-5px); // Efecto de elevación al pasar el ratón
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Sombreado más fuerte al pasar el ratón
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333; // Color del texto
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #666; // Color del texto
+            margin-bottom: 2rem;
+        }
+
+        button {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            background-color: #1db954; // Color de fondo para el botón
+            color: white; // Color del texto
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; // Transiciones suaves
+
+            &:hover {
+                background-color: #1aa34a; // Color de fondo al pasar el ratón
+                transform: translateY(-2px); // Efecto de elevación al pasar el ratón
+            }
+        }
+    }
+}
+

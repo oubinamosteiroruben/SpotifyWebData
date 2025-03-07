@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* PrimeReact Theme */
+@import 'primereact/resources/themes/saga-blue/theme.css';
+
+/* Core CSS */
+@import 'primereact/resources/primereact.min.css';
+
+/* Icons */
+@import 'primeicons/primeicons.css';
+
+/* PrimeFlex */
+@import 'primeflex/primeflex.css';

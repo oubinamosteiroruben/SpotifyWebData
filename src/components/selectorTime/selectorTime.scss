@@ -1,0 +1,30 @@
+.selector-time {
+    display: grid;
+    width: 50vw;
+    margin: 10vh auto 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem; // Añadir espacio entre los botones
+
+    button {
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: #f0f0f0; // Color de fondo para los botones
+        color: #333; // Color del texto
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s; // Transiciones suaves
+
+        &:hover {
+            background-color: #1aa34a; // Color de fondo al pasar el ratón
+            transform: translateY(-2px); // Efecto de elevación al pasar el ratón
+            color: white;
+        }
+
+        &.selected {
+            background-color: #1db954; // Color de fondo para el botón seleccionado
+            color: white; // Color del texto para el botón seleccionado
+        }
+    }
+}

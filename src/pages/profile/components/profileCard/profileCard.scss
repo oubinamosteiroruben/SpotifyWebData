@@ -1,0 +1,25 @@
+.profile-card {
+    display: flex;
+    border: 2px solid #f1f1f1;
+    border-radius: 10px;
+    background-color: #eee;
+    padding: 1rem 4rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Añadir esta línea para el sombreado ligero
+    margin-top: 25vh;
+    .title-profile {
+        font-size: 2rem;
+        font-weight: bold;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover; // Añadir esta línea para que la imagen no se deforme
+            object-position: center; // Añadir esta línea para centrar la imagen
+        }
+    }
+}

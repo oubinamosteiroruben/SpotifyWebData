@@ -1,0 +1,17 @@
+.tracks-page {
+  display: flex;
+  flex-direction: column;
+}
+.tracks-page .tracks-grid {
+  gap: 2rem;
+  margin: 5rem auto;
+  max-width: 70vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.tracks-page .spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}/*# sourceMappingURL=tracks.css.map */

@@ -1,0 +1,25 @@
+.navigate-top-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background-color: #1db954;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.navigate-top-button:hover {
+  background-color: #1aa34a;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.navigate-top-button .icon {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=navigateTopButton.css.map */

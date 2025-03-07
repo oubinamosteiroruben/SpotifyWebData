@@ -1,0 +1,27 @@
+.navigate-top-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background-color: #1db954; // Color de fondo del botón
+    color: white; // Color del icono
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombreado ligero
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; // Transiciones suaves
+
+    &:hover {
+        background-color: #1aa34a; // Color de fondo al pasar el ratón
+        transform: translateY(-5px); // Efecto de elevación al pasar el ratón
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Sombreado más fuerte al pasar el ratón
+    }
+
+    .icon {
+        font-size: 1.5rem; // Tamaño del icono
+    }
+}

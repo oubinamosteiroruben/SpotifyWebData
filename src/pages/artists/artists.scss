@@ -1,0 +1,18 @@
+.artists-page{
+    display: flex;
+    flex-direction: column;
+    .artists-grid{
+        gap: 2rem;
+        margin: 5rem auto;
+        max-width: 70vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .spinner-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+}
