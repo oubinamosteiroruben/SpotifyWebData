@@ -1,6 +1,7 @@
 import axios from 'axios';
 import qs from 'qs';
 import { Buffer } from 'buffer'; // Importa el polyfill de Buffer
+import { getHost } from '../utils/utils';
 
 function generateRandomString(length) {
     let text = '';
@@ -14,7 +15,7 @@ function generateRandomString(length) {
 
 export function getSpotifyToken() {
     const client_id = 'dea769c434c64c8e93d3d34b1d2d36b0';
-    const redirect_url = 'http://localhost:3000/profile'; // Asegúrate de que esta URI coincida con la registrada en Spotify
+    const redirect_url = `${getHost()}/profile`; // Asegúrate de que esta URI coincida con la registrada en Spotify
     const state = generateRandomString(16);
     const scope = 'user-read-private user-read-email user-top-read playlist-read-private playlist-modify-public user-follow-modify'; // Añadir los scopes necesarios
 
@@ -40,7 +41,7 @@ export async function handleSpotifyCallback() {
 
         const client_id = 'dea769c434c64c8e93d3d34b1d2d36b0';
         const client_secret = '018b436cfe734d128d68044bb980b5a6';
-        const redirect_url = 'http://localhost:3000/profile';
+        const redirect_url = `${getHost()}/profile`;
 
         const authOptions = {
             url: 'https://accounts.spotify.com/api/token',
