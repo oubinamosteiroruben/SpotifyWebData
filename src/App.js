@@ -8,7 +8,9 @@ import { handleSpotifyCallback } from './services/spotifyutils';
 
 
 function App() {
-  const [token, setToken] = useState(localStorage.getItem('access_token'));
+
+  
+  const [token, setToken] = useState(null);
 
   useEffect(() => {
     if (!token && window.location.pathname !== '/') {
@@ -17,6 +19,8 @@ function App() {
       }).catch(() => {
         window.location = '/';
       });
+    }else{
+      localStorage.removeItem('access_token')
     }
   }, [token]);
 

@@ -4,6 +4,8 @@ import './profileCard.css';
 
 function ProfileCard({profileData}) {
 
+    const img = profileData.images && profileData.images[0]?.url;
+
     return (
         <>
         {
@@ -11,7 +13,7 @@ function ProfileCard({profileData}) {
                 <div className="profile-card">
                     <div className="title-profile">
                         <h1>Hello&nbsp;{profileData.display_name}</h1>
-                        <img height="200" src={profileData.images[0].url} alt='profile' />
+                        { img && (<img height="200" src={img} alt='profile' />)}
                     </div>
                 </div>
             )
