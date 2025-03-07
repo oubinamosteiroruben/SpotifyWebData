@@ -44,4 +44,30 @@
   -webkit-line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 768px) {
+  .track {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
+  .track img {
+    height: 100px;
+    width: 100px;
+  }
+  .track .index {
+    font-size: 0.75rem;
+    min-width: 30px;
+    min-height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .track .track-name {
+    font-size: 0.75rem;
+  }
+  .track .track-artist {
+    font-size: 0.65rem;
+  }
 }/*# sourceMappingURL=track.css.map */

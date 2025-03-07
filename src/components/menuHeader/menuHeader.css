@@ -25,6 +25,7 @@
   text-decoration: none;
   color: #333;
   transition: color 0.3s;
+  border-radius: 5px;
 }
 .menu-header .menu-header-option.selected a {
   color: #1db954;
@@ -35,4 +36,30 @@
 }
 .menu-header .menu-header-option:hover a {
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-header {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    gap: 0rem;
+    left: 0px;
+    padding: 0 2rem 0 2rem;
+    top: 10vh;
+    margin-left: 0;
+  }
+  .menu-header .menu-header-option:nth-child(1) a {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .menu-header .menu-header-option:nth-child(2) a {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .menu-header .menu-header-option.selected a {
+    color: white;
+    background-color: #1db954;
+  }
 }/*# sourceMappingURL=menuHeader.css.map */

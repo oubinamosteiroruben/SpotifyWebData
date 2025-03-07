@@ -46,7 +46,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.artist .popularity {
+.artist .index {
   font-size: 0.75rem;
   color: white;
   background-color: purple;
@@ -55,6 +55,8 @@
   right: 0.5rem;
   padding: 0.5rem;
   border-radius: 100%;
+  min-width: 30px;
+  min-height: 30px;
 }
 .artist .following-button {
   background-color: #1db954;
@@ -69,4 +71,24 @@
 .artist .following-button:hover {
   background-color: #1aa34a;
   transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+  .artist {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+  }
+  .artist img {
+    height: 100px;
+    width: 100px;
+  }
+  .artist .index {
+    font-size: 0.75rem;
+    min-width: 30px;
+    min-height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
 }/*# sourceMappingURL=artist.css.map */

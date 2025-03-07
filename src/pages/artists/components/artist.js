@@ -3,7 +3,7 @@ import "./artist.css";
 import {followArtist} from "../../../services/spotifyutils";
 import SpotifyContext from "../../../context/spotifyContext";
 
-function Artist({ artistData }) {
+function Artist({ artistData, index }) {
 
     const {token} = useContext(SpotifyContext);
 
@@ -20,8 +20,8 @@ function Artist({ artistData }) {
                 <div className="artist-name">{artistData.name}</div>
                 <div className="artist-genre" title={artistData.genres.join(', ')}>{artistData.genres.join(', ')}</div>
             </div>
-            <div title='Popularity rate' className="popularity">{artistData.popularity}</div>
-            <button onClick={followArtistButton} className="following-button">Follow</button>
+            <div title='Position' className="index">{index+1}</div>
+            {/* <button onClick={followArtistButton} className="following-button">Follow</button> */}
         </a>
     );
 }

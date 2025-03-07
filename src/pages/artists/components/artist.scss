@@ -49,7 +49,7 @@
         text-overflow: ellipsis;
     }
 
-    .popularity{
+    .index{
         font-size: 0.75rem;
         color: white;
         background-color: purple;
@@ -58,6 +58,8 @@
         right: 0.5rem;
         padding: 0.5rem;
         border-radius: 100%;
+        min-width: 30px;
+        min-height: 30px;
     }
 
     .following-button{
@@ -75,4 +77,26 @@
         }
         margin-bottom: 1rem;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .artist {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .index{
+            font-size: 0.75rem;
+            min-width: 30px;
+            min-height: 30px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+    }
+    
 }

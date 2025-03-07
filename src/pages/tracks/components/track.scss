@@ -48,3 +48,33 @@
         text-overflow: ellipsis;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .track {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .index{
+            font-size: 0.75rem;
+            min-width: 30px;
+            min-height: 30px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        .track-name{
+            font-size: 0.75rem;
+        }
+
+        .track-artist{
+            font-size: 0.65rem;
+        }
+    }
+    
+}

@@ -36,8 +36,8 @@ function Artists() {
                 artists ? (
                     <>
                         <div className="artists-grid">
-                            {artists.items.map((artist) => (
-                                <Artist artistData={artist} key={artist.id}/>
+                            {artists.items.map((artist, index) => (
+                                <Artist index={index} artistData={artist} key={artist.id}/>
                             ))}
                         </div>
                         <NavigateTopButton />

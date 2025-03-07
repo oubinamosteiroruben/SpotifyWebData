@@ -1,1 +1,1 @@
-{"version":3,"sources":["artists.scss","artists.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;ACCJ;ADAI;EACI,SAAA;EACA,iBAAA;EACA,eAAA;EACA,aAAA;EACA,4DAAA;ACER;ADCI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;ACCR","file":"artists.css"}
+{"version":3,"sources":["artists.scss","artists.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;ACCJ;ADAI;EACI,SAAA;EACA,iBAAA;EACA,eAAA;EACA,aAAA;EACA,4DAAA;ACER;ADCI;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;ACCR;;ADGA;EAEQ;IACI,iBAAA;IACA,0BAAA;IACA,eAAA;IACA,WAAA;ECDV;AACF","file":"artists.css"}

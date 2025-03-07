@@ -14,4 +14,13 @@
   justify-content: center;
   align-items: center;
   height: 60vh;
+}
+
+@media screen and (max-width: 768px) {
+  .artists-page .artists-grid {
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+    max-width: 90vw;
+    gap: 0.5rem;
+  }
 }/*# sourceMappingURL=artists.css.map */

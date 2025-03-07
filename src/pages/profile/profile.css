@@ -15,4 +15,13 @@
   justify-content: center;
   align-items: center;
   height: 60vh;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-page .profile-card {
+    max-width: 90vw;
+  }
+  .profile-page .profile-card .title-profile {
+    display: unset;
+  }
 }/*# sourceMappingURL=profile.css.map */
